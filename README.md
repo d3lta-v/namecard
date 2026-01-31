@@ -53,6 +53,9 @@ Please solder the through hole components onto the board as per the instructions
 
 A demo of using this device with an oscilloscope can be seen below:
 
+https://github.com/user-attachments/assets/78531d4b-4d0c-471a-add1-b3f7db313485
+
+
 
 ## Specifications
 
@@ -63,8 +66,8 @@ A demo of using this device with an oscilloscope can be seen below:
 | $I_{\text{max}}$ Maximum current |                 |     |     | 5   | A    |
 | $V_{\text{cc}}$ Supply voltage   |                 |     |     | 5.5 | V    |
 
-
-> WARNING: This device has NO input current protection to reduce burden voltage to a minimum. Do NOT overload the device.
+> [!WARNING]
+> This device has NO input current protection to reduce burden voltage to a minimum. Do NOT overload the device.
 
 
 ### Electrical Characteristics
@@ -92,12 +95,14 @@ A demo of using this device with an oscilloscope can be seen below:
 
 
 In ordinary operations in which virtual ground voltage $V_{\text{VGND}}=\frac{V_{\text{cc}}}{2}$, you can calculate the output voltage dynamic range using the formula:
+
 $$
 V_{\text{dynamic}} = \pm \left(\frac{V_{\text{cc}}}{2} - 200 \text{mV}\right)
 $$
 
 
 If you short the JP1 jumper, which sets the virtual ground voltage $V_{\text{VGND}}=0$, the new dynamic range will purely be in the positive range:
+
 $$
 V_{\text{dynamic}} = V_{\text{cc}} - 200 \text{mV}
 $$
